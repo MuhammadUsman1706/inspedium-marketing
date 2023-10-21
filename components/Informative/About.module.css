@@ -1,0 +1,84 @@
+.about p {
+  font-family: "Open Sans";
+}
+
+.about h1 {
+  font-family: "Josefin Sans";
+}
+
+.integration {
+  margin-top: 10%;
+}
+
+.about-points {
+  background: url("../../public/images/about-points-background.png");
+  background-size: 100% 100%;
+  max-width: 90%;
+  margin: auto;
+  padding: 2% 5%;
+}
+
+.about-points hr {
+  border-top: 1px dashed black;
+}
+
+.point-1 {
+  display: flex;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.point-heading-1 {
+  /* position: relative; */
+  display: flex;
+}
+
+.point-heading-1 h1 {
+  font-size: 2em;
+  margin-right: 1rem;
+}
+
+.point-heading-1 img {
+  margin-top: 1rem;
+  width: 100px;
+  height: 100px;
+  transform: rotate(60deg) scaleY(-1);
+}
+
+.point-2 {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.point-header-2 img {
+  width: 100px;
+  height: 100px;
+  transform: rotate(60deg);
+}
+
+.point-header-1,
+.point-header-2 {
+  width: 100%;
+}
+
+.point-header-2 h1 {
+  font-size: 2em;
+}
+
+.faqs {
+  margin-top: 6%;
+}
+
+@media screen and (max-width: 700px) {
+  .point-1 {
+    flex-direction: column;
+  }
+
+  .point-2 {
+    flex-direction: column-reverse;
+  }
+
+  .point-2 img {
+    display: none;
+  }
+}

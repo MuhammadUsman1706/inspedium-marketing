@@ -1,0 +1,113 @@
+.simple-cards-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.simple-cards-header {
+  display: flex;
+  column-gap: 1rem;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+.simple-cards-header hr {
+  width: 50%;
+  border-top: 2px dashed black;
+}
+
+.simple-cards {
+  display: flex;
+  column-gap: 5%;
+  margin: 1rem;
+}
+
+.simple-cards > div {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.odd {
+  padding: 2rem;
+  background-color: #f7e0d5;
+  border-radius: 20px;
+}
+
+.even {
+  padding: 2rem;
+  background-color: #dcdfda;
+  border-radius: 20px;
+}
+
+/* Added Transition */
+.simple-cards > div:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.even::before {
+  background-color: #f7e0d5;
+}
+
+.odd::before {
+  background-color: #dcdfda;
+}
+
+.simple-cards > div:hover:before {
+  transform: scale(26);
+}
+/* Added Transition */
+
+.simple-cards h1 {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 1100px) {
+  .simple-cards-header {
+    font-size: 1em;
+  }
+
+  .simple-cards {
+    column-gap: 3%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .simple-cards {
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+  }
+
+  .simple-cards > div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .simple-cards > div {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .simple-cards-header {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    text-align: center;
+  }
+}

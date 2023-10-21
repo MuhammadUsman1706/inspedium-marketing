@@ -1,0 +1,393 @@
+.landing {
+  margin-top: 10%;
+}
+
+.landing h1 {
+  font-family: "Josefin Sans";
+}
+
+.landing p {
+  font-family: "Open Sans";
+  /* font-size: 1.2rem; */
+}
+
+/* .integration {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 163, 120, 0.5) 0%,
+    rgba(255, 227, 214, 0) 115.48%
+  );
+  padding: 2rem 3rem;
+  border-radius: 30px;
+  margin: auto;
+  max-width: 90%;
+} */
+
+.dotted-heading {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.dotted-heading hr {
+  width: 100%;
+  border-top: 2px dashed black;
+}
+
+/* .integration p {
+  text-align: center;
+} */
+
+.para {
+  color: #363636;
+}
+
+/* .integration-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.grid-text {
+  width: 40%;
+}
+
+.grid-text h1 {
+  font-size: 2rem;
+}
+
+.grid-image {
+  width: 45%;
+}
+
+.grid-image img {
+  width: 100%;
+}
+
+.campaign {
+  display: flex;
+  background-image: url("../../public/images/campaign-background.png");
+  column-gap: 10%;
+  margin: auto;
+  padding: 2rem 3rem;
+  max-width: 93%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  justify-content: space-around;
+  /* margin: 1rem; */
+}
+
+.campaign > div:first-child {
+  max-width: 600px;
+}
+
+.campaign > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 500px;
+}
+
+.campaign h1 {
+  font-size: 2em;
+}
+
+.campaign p {
+  font-size: 1.1em;
+}
+
+.left-text {
+  position: relative;
+  left: -50px;
+}
+
+.left-arrow,
+.right-arrow {
+  position: relative;
+  width: 100%;
+  /* width: 100px; */
+}
+
+.right-arrow img {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  width: 80px;
+  transform: rotate(30deg);
+}
+
+.left-arrow img {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 80px;
+  transform: rotate(-10deg);
+}
+
+.attract {
+  background-image: url("../../public/images/attract-background.png");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 10%;
+  row-gap: 1.5rem;
+  margin: auto;
+  max-width: 93%;
+}
+
+.attract h1 {
+  text-align: center;
+  display: flex;
+  white-space: nowrap;
+  column-gap: 1rem;
+  font-size: 2em;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.attract hr {
+  width: 100%;
+  border-top: 2px dashed black;
+}
+
+.attract p,
+.attract button {
+  text-align: center;
+  margin: auto;
+}
+
+.feature-cards-section {
+  max-width: 1300px;
+  margin: 4rem auto;
+}
+
+.feature-cards-header {
+  display: flex;
+  column-gap: 1rem;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-cards-header hr {
+  width: 50%;
+  border-top: 2px dashed black;
+}
+
+.feature-cards {
+  display: flex;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-cards > div {
+  overflow: hidden;
+}
+
+.feature-cards > div:hover {
+  transform: scale(0.95);
+  /* background: linear-gradient(
+    49.98deg,
+    rgba(164, 181, 187, 0.6) 9.18%,
+    rgba(212, 216, 209, 0.6) 94.26%
+  ); */
+}
+
+.feature-cards > div:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.feature-cards .odd {
+  width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: white;
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.feature-cards .even {
+  width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: linear-gradient(
+    49.98deg,
+    rgba(164, 181, 187, 0.6) 9.18%,
+    rgba(212, 216, 209, 0.6) 94.26%
+  );
+  font-size: 1.2em;
+  transition: transform 0.3s;
+}
+
+.odd::before {
+  background: linear-gradient(
+    49.98deg,
+    rgba(164, 181, 187, 0.6) 9.18%,
+    rgba(212, 216, 209, 0.6) 94.26%
+  );
+}
+
+.even::before {
+  background: white;
+}
+
+.feature-cards > div:hover:before {
+  transform: scale(33);
+}
+
+/* .faqs {
+  margin: auto;
+  max-width: 1300px;
+}
+
+.faqs-header {
+  text-align: center;
+}
+
+.faq-display {
+  display: flex;
+  column-gap: 1rem;
+} */
+
+@media screen and (max-width: 1100px) {
+  /* .integration-images {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+  } */
+
+  .campaign {
+    padding: 1rem 2rem;
+    max-width: 95%;
+  }
+
+  .simple-cards-header {
+    font-size: 1em;
+  }
+
+  .simple-cards {
+    column-gap: 3%;
+  }
+
+  .attract {
+    max-width: 95%;
+  }
+
+  .feature-cards-header {
+    font-size: 1em;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .feature-cards {
+    justify-content: center;
+  }
+
+  .faqs-header {
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .faq-display {
+    max-width: 95%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .simple-cards {
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+  }
+
+  .simple-cards > div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .feature-grid {
+    flex-direction: column;
+    row-gap: 2rem;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  #flip {
+    flex-direction: column-reverse;
+  }
+
+  .feature-grid > div {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feature-grid > div {
+    text-align: center;
+  }
+
+  .campaign {
+    flex-direction: column;
+    background: #aab9be;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .campaign > div {
+    text-align: center;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    display: none;
+  }
+
+  .left-text {
+    left: 0;
+  }
+
+  .simple-cards > div {
+    width: 90%;
+  }
+
+  .faq-display {
+    flex-direction: column;
+  }
+
+  .feature-cards {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .feature-cards > div {
+    text-align: center;
+  }
+}

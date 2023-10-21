@@ -1,0 +1,38 @@
+.attract {
+  background-image: url("../../../public/images/attract-background.png");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 10%;
+  row-gap: 1.5rem;
+  margin: auto;
+  max-width: 93%;
+}
+
+.attract h1 {
+  text-align: center;
+  display: flex;
+  white-space: nowrap;
+  column-gap: 1rem;
+  font-size: 2em;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.attract hr {
+  width: 100%;
+  border-top: 2px dashed black;
+}
+
+.attract p,
+.attract button {
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .attract {
+    max-width: 95%;
+  }
+}
